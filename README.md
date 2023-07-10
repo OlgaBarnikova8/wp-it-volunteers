@@ -1,8 +1,8 @@
 # wp-it-volunteers
-WordPress тема + Gulp
-Для встановлення залежностей команда: npm install
-Для запуску команд Gulp: gulp
-Для складання проекту у режимі "production": gulp build
+WordPress тема + Gulp  
+Для встановлення залежностей команда: npm install  
+Для запуску команд Gulp: gulp  
+Для складання проекту у режимі "production": gulp build  
 
 Що робить Gulp:
 - збирає SCSS файли, додає вендорні префікси
