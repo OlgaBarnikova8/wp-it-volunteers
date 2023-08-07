@@ -1,0 +1,179 @@
+/*icomoon====================================================*/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../images/icomoon.eot?u1u4ip');
+    src:  url('../images/icomoon.eot?u1u4ip#iefix') format('embedded-opentype'),
+      url('../images/icomoon.ttf?u1u4ip') format('truetype'),
+      url('../images/icomoon.woff?u1u4ip') format('woff'),
+      url('../images/icomoon.svg?u1u4ip#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"]::before, [class*=" icon-"]::before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-facebook:before {
+    content: "\e900";
+    color: #4675eb;
+    border: 1px solid #4675EB;
+    border-radius: 50%;
+    margin-right: 15px;
+    padding: 4px;
+  }
+  .icon-linkedin:before {
+    content: "\e901";
+    color: #4675eb;
+    border: 1px solid #4675EB;
+    border-radius: 50%;
+    margin-right: 15px;
+    padding: 4px;
+  }
+  .icon-telegram:before {
+    content: "\e902";
+    color: #4675eb;
+    border: 1px solid #4675EB;
+    border-radius: 50%;
+    margin-right: 15px;
+    padding: 4px;
+  }
+  .icon-viber:before {
+    content: "\e903";
+    color: #4675eb;
+    border: 1px solid #4675EB;
+    border-radius: 50%;
+    margin-right: 15px;
+    padding: 4px;
+  }
+  
+  
+
+/*footer====================================================*/
+.footer {
+    margin: 64px 0 32px;
+    @media (max-width: 991.98px) {
+        margin: 48px 0 32px;
+    }
+    @media (max-width: 767.98px) {
+        margin: 60px 0 20px;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 767.98px) {
+            flex-direction: column;
+        }
+    }
+    &__logo {
+        img {
+            width: 160px;
+            height: 160px;
+            @media (max-width: 991.98px) {
+                width: 120px;
+                height: 120px;
+            }
+            @media (max-width: 767.98px) {
+                width: 74px;
+                height: 74px;
+            }
+        }
+    }     
+    &__title {
+        margin: 0 0 30px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 100%; 
+        @media (max-width: 991.98px) {
+            margin: 0 0 24px;
+            font-size: 21px;
+        }
+        @media (max-width: 767.98px) {
+            margin: 32px 0 22px;
+            font-size: 18px;
+        }
+    }
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+            margin-bottom: 24px;
+            @media (max-width: 991.98px) {
+                margin-bottom: 20px;
+            }            
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }        
+    }    
+    &__link {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 100%; 
+        &:hover {
+            color: #3F78E3;
+        }   
+        @media (max-width: 991.98px) {font-size: 17px;}  
+        @media (max-width: 767.98px) {font-size: 18px;}   
+    }
+    &__social {
+        @media (max-width: 991.98px) {
+            display: none;   
+        } 
+        li {
+            font-weight: 500;                                           
+        }        
+    }
+    &__contact {
+        &-text {            
+            font-weight: 500;
+            margin: 0 0 24px;
+            @media (max-width: 991.98px) {
+                margin: 0 0 20px;
+            }
+        }
+    }
+    &__contact-social {        
+        display: none;
+        @media (max-width: 991.98px) {
+            display:block;   
+            margin: 34px 0 0;
+            a {margin-right: 10px}
+        }
+        @media (max-width: 767.98px) {
+            margin: 40px 0 0;
+            text-align: center;
+        } 
+    }
+    &__copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        @media (max-width: 991.98px) {margin-top: 64px;}
+        @media (max-width: 767.98px) {margin-top: 32px;}
+        img {margin: 0 2px;}
+    }
+    &__text {
+        margin: 0;
+        color: #909390;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 100%; 
+        @media (max-width: 767.98px) {font-size: 13px;}
+    } 
+}

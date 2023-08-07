@@ -1,0 +1,161 @@
+.form {
+    background: #3F78E3;
+    @media (max-width: 767.98px) {
+        margin: 90px 0 0;
+        padding: 40px 0;
+    }
+    &__container {
+        position: relative;
+        display: flex;
+        gap: 11%;
+        justify-content: space-between; 
+        @media (max-width: 991.98px) {
+            flex-direction: column;
+            padding: 40px 0 56px;
+        }        
+    }
+    &__content {        
+        padding: 64px 0 0;
+        @media (max-width: 991.98px) {
+            padding: 0;
+        }
+        img {
+            padding-left: 55px;
+            @media (max-width: 991.98px) {
+                display: block;
+                position: absolute;
+                bottom: 0;
+                right: -90px;
+                width: 300px;
+                height: 411px;
+                padding: 0;
+            }
+            @media (max-width: 767.98px) {
+                display: none;
+            }
+        }
+    }
+    &__title {
+        width: 520px;     
+        color: #FFF;
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 120%; 
+        margin: 0;
+        @media (max-width: 991.98px) {
+            padding: 0;
+            width: 100%;
+            font-size: 36px;
+        }
+        @media (max-width: 767.98px) {
+            font-size: 32px;
+        }
+    }
+
+    /*form=========================*/
+    &__column {
+        padding: 105px 0 100px;
+        flex-grow: 1;
+        @media (max-width: 991.98px) {
+            padding: 40px 0 0px;            
+        }
+        @media (max-width: 767.98px) {
+            padding: 20px 0 0px; 
+        }
+    }
+    &__message {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        @media (max-width: 991.98px) {
+            width: 450px;
+        }
+        @media (max-width: 767.98px) {
+            width: 100%;
+        }
+    }
+    &__label {
+        color: #FFF;
+        font-size: 24px;        
+        line-height: 100%; 
+        padding-bottom: 16px;
+        span {color: #FECE00;}
+        @media (max-width: 991.98px) {
+            font-size: 21px;  
+        }
+        @media (max-width: 767.98px) {
+            font-size: 18px;        
+            padding-bottom: 12px;
+        }
+    }
+    &__info {         
+       padding: 20px 32px;
+       margin-bottom: 32px;
+       border: 1px solid #FFF;
+       border-radius: 40px;
+       background: #FFF;       
+       color: #C9C9C9;
+       font-size: 21px;       
+       line-height: 130%; 
+       @media (max-width: 991.98px) {
+            padding: 16px 32px;
+            margin-bottom: 24px;
+            font-size: 17px;    
+        }
+        @media (max-width: 767.98px) {
+            padding: 14px 16px;
+            margin-bottom: 28px;
+            font-size: 16px; 
+        }
+    }
+    &__text {        
+        padding: 20px 32px 100px;
+        margin-bottom: 40px;
+        border: 1px solid #FFF;
+        border-radius: 24px;
+        background: #FFF;
+        color: #C9C9C9;
+        font-size: 21px;       
+        line-height: 130%; 
+        @media (max-width: 991.98px) {
+            padding: 16px 32px 110px;            
+            font-size: 17px;   
+        }
+        @media (max-width: 767.98px) {
+            padding: 14px 16px 110px;            
+            font-size: 16px; 
+        }
+    }
+    &__btn {
+        padding: 20px 32px;
+        width: 200px;
+        border-radius: 40px;
+        border: 1px solid #3F78E3;
+        background: #F6D649;
+        color: #2B1D28;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 130%; 
+        &:hover {
+            background: #2C2C2C;
+            color: #FFFFFF;
+        }
+        @media (max-width: 991.98px) {
+            padding: 16px 24px;         
+            font-size: 17px;   
+        }
+        @media (max-width: 767.98px) {
+            width: 100%;
+            font-size: 18px;
+        }
+    }
+
+    input:focus {
+        color: #2C2C2C;  
+    }
+
+    input:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+}
